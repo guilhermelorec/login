@@ -1,0 +1,36 @@
+
+<div class="centered-container">
+    <div class="flex-column gap-2 box-shadow">
+        
+        <!-- titulo -->
+        <h2 [ngStyle]="{color: 'var(--primary-color)'}">Login</h2>
+
+
+        <!-- input email -->
+        <p-floatLabel>
+            <input pInputText id="email" [(ngModel)]="email" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">Email</label>
+        </p-floatLabel>
+
+        
+        <!-- input senha -->
+        <p-floatLabel>
+            <p-password  [(ngModel)]="password" [feedback]="false" [toggleMask]="true"/>
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="password">Senha</label>
+        </p-floatLabel>
+
+
+        <!-- botão -->
+        <div class="btn-container">
+            <a><p-button label="Entrar" [raised]="true"/></a>
+        </div>
+
+
+        <!-- botão cadastro -->
+        <div class="py-2">
+            <a><p-button label="cadastre-se" [link]="true" [routerLink]="['/cadastro']"/></a>
+        </div>
+       
+    </div>
+</div>
+

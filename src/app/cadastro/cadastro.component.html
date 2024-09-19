@@ -1,0 +1,35 @@
+
+<div class="centered-container">
+    <div class="flex-column gap-2 box-shadow">
+        
+        <!-- titulo -->
+        <h2 [ngStyle]="{color: 'var(--primary-color)'}">Cadastro</h2>
+
+        <!-- input nome  -->
+        <p-floatLabel>
+            <input pInputText id="Nome" [(ngModel)]="nome" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="nome">Nome</label>
+        </p-floatLabel>
+
+
+        <!-- input email -->
+        <p-floatLabel>
+            <input pInputText id="email" [(ngModel)]="email" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">Email</label>
+        </p-floatLabel>
+
+        
+        <!-- input senha -->
+        <p-floatLabel>
+            <input pInputText id="senha" [(ngModel)]="password" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">Senha</label>
+        </p-floatLabel>
+
+
+        <!-- botão -->
+        <div class="btn-container">
+            <a><p-button label="casdastrar" [raised]="true"/></a>
+        </div>
+
+    </div>
+</div>
